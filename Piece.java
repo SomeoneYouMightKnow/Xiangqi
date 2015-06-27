@@ -1,16 +1,14 @@
 public class Piece{
 
     //variables
-    private final int color; //black (0) or red (1)
+    private final String color; //black or red
     private boolean alive; //whether or not a piece has been captured
     private String[] moves; //array containing strings of possible legal moves for that piece
     
     //constructors
     public Piece(String s){//takes color as a parameter
-	if (s == "black") {
-		color = 0;
-	} else if (s == "red") {
-		color = 1;
+	if (s == "black" || s == "red") {
+		color = s;
 	} else {
 		System.out.println("invalid color");
 	}
