@@ -3,7 +3,8 @@ public class Piece{
     //variables
     private final int color; //black (0) or red (1)
     private boolean alive; //whether or not a piece has been captured
- 
+    private String[] moves; //array containing strings of possible legal moves for that piece
+    
     //constructors
     public Piece(String s){//takes color as a parameter
 	if (s == "black") {
