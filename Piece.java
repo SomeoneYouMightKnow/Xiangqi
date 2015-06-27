@@ -1,12 +1,18 @@
 public class Piece{
 
     //variables
-    private final String color; //black (0) or red (1)
+    private final int color; //black (0) or red (1)
     private boolean alive; //whether or not a piece has been captured
  
     //constructors
     public Piece(String s){//takes color as a parameter
-	color = s;
+	if (s == "black") {
+		color = 0;
+	} else if (s == "red") {
+		color = 1;
+	} else {
+		System.out.println("invalid color");
+	}
 	alive = true;
     }
 
