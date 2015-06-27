@@ -21,16 +21,6 @@ public class Piece{
 	p.setAlive(false);
     }
 
-    //check methods
-    /*public void checkMoves(){
-
-      }*/
-
-    //set methods
-    public void setAlive(boolean a){
-	alive = a;
-    }
-
     //get methods
     public String getColor(){
 	return color;
