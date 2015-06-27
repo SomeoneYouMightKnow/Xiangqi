@@ -5,7 +5,7 @@ public class Piece{
     private boolean alive; //whether or not a piece has been captured
  
     //constructors
-    public Piece(String s, boolean a){//takes color as a parameter
+    public Piece(String s){//takes color as a parameter
 	color = s;
 	alive = true;
     }
